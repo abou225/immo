@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Détails du client</title>
+    <title>Détails du propriétaire</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
@@ -12,40 +12,36 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header bg-dark text-white">
-                        <h2 class="mb-0">Détails du client</h2>
+                        <h2 class="mb-0">Détails du Propriétaire</h2>
                     </div>
                     <div class="card-body">
                         <table class="table table-bordered">
                             <tr>
                                 <th>ID</th>
-                                <td>{{ customer.id }}</td>
+                                <td>{{ owner.id }}</td>
                             </tr>
                             <tr>
                                 <th>First Name</th>
-                                <td>{{ customer.firstname }}</td>
+                                <td>{{ owner.firstname }}</td>
                             </tr>
                             <tr>
                                 <th>Last Name</th>
-                                <td>{{ customer.lastname }}</td>
+                                <td>{{ owner.lastname }}</td>
                             </tr>
                             <tr>
                                 <th>Email</th>
-                                <td>{{ customer.email }}</td>
+                                <td>{{ owner.email }}</td>
                             </tr>
                             <tr>
                                 <th>Phone</th>
-                                <td>{{ customer.phone }}</td>
+                                <td>{{ owner.phone }}</td>
                             </tr>
                             <tr>
-                                <th>Job</th>
-                                <td>{{ customer.job }}</td>
-                            </tr>
-                            <tr>
-                                <th>Birthday</th>
-                                <td>{{ customer.birthday }}</td>
+                                <th>Address</th>
+                                <td>{{ owner.address }}</td>
                             </tr>
                         </table>
-                        <a href="{% url 'c-list' %}" class="btn btn-success">Retour</a>
+                        <a href="{% url 'o-list' %}" class="btn btn-success">Retour</a>
                     </div>
                 </div>
             </div>

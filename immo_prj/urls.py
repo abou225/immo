@@ -21,11 +21,11 @@ from core.views import home_view, about_view, contact_view
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("Customers/", include("Customers.urls")),
-#    path("Owners/", include("Owners.urls")),
+    path("Owners/", include("Owners.urls")),
     path("Properties/", include("Properties.urls")),
-  #  path("Accounts/", include("Accounts.urls")),
-   # path("Bookings/", include("Bookings.urls")),
-     path('home', home_view, name="home"),
-     path("about", about_view, name="about"),
-     path("contact", contact_view, name="contact"),
+     #  path("Accounts/", include("Accounts.urls")),
+     # path("Bookings/", include("Bookings.urls")),
+    path('home', home_view, name="home"),
+    path("about", about_view, name="about"),
+    path("contact", contact_view, name="contact"),
 ]
